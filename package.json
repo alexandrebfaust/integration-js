@@ -1,0 +1,29 @@
+{
+  "name": "socicoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chalk": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.17",
+    "nodemailer": "^6.4.18",
+    "nodemailer-express-handlebars": "^5.0.0",
+    "object-hash": "^3.0.0",
+    "path": "^0.12.7",
+    "xml2js": "^0.4.23"
+  }
+}
