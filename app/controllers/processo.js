@@ -74,7 +74,7 @@ router.get('/:idContexto', async (req, res) => {
     }
 });
 
-router.post('/:idContexto', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
         const idContexto = req.params.idContexto;
         const token = req.headers.authorization;
