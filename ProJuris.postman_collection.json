@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "f5e4c857-4b75-4807-9374-7544d5a90dd1",
+		"name": "ProJuris",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11125765"
+	},
+	"item": [
+		{
+			"name": "Processo por ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "2201bc3b-4497-4b15-b506-84a76c962046",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/processo/263",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"processo",
+						"263"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Processo por Filtro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "2201bc3b-4497-4b15-b506-84a76c962046",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filtro\":\"{gA:[{c:{f:'ID_PROCESSO', o:'=', vc:'263'}}]}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/processo/263",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"processo",
+						"263"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Entidade Incluir",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "2201bc3b-4497-4b15-b506-84a76c962046",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Teste batatinha\",\r\n    \"idtipodocumentotipodocumento\":\"CPF\",\r\n    \"numerodocumento\":\"122.231.123-71\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/entidades/incluir",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"entidades",
+						"incluir"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
